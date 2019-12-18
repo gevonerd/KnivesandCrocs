@@ -16,7 +16,7 @@ public class Game extends Canvas implements Runnable{
     private static final int SCALE =8;
 
     //Name of the window
-    public static final String NAME = "Knives and Crocs";
+    public static final String NAME = "Knives and Bolts";
 
     private JFrame frame;
 
