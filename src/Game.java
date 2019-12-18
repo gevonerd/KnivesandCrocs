@@ -165,19 +165,23 @@ public class Game extends Canvas implements Runnable{
     public void tick() {
         tickCount++;
         grass++;
-        walk++;
+
         //System.out.println(grass);
         level.tick();
         if (input.up.isPressed()) {
+            walk++;
             if(screen.yOffset>=-33)
                 screen.yOffset--;}
         if (input.down.isPressed()) {
+            walk++;
             if(screen.yOffset<=125)
                 screen.yOffset++;}
         if (input.left.isPressed()) {
+            walk++;
             if(screen.xOffset>=-60)
                 screen.xOffset--;}
         if (input.right.isPressed()) {
+            walk++;
             if(screen.xOffset<=100)
                 screen.xOffset++;}
         //System.out.println (screen.yOffset+"\t"+screen.xOffset);
